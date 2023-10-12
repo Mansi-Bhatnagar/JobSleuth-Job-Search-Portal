@@ -1,0 +1,35 @@
+.logo {
+  width: 200px;
+}
+.links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icons {
+  padding: 5px;
+  font-size: 1.7rem;
+  color: #000;
+}
+.links span {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #000;
+}
+.active .icons {
+  color: #ff4d6d;
+}
+.active span {
+  color: #ff4d6d;
+}
+.links a:hover span,
+.links a:hover .icons {
+  color: #ff4d6d;
+}
+@media (max-width: 576px) {
+  .links span {
+    display: none;
+  }
+}

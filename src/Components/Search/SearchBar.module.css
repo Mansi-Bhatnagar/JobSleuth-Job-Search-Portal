@@ -1,0 +1,52 @@
+.container {
+  background-color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.container div div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.container div div::before {
+  border-bottom: 0;
+}
+.icons {
+  margin: 10px;
+  color: #979dac;
+}
+.container .textField div:hover::before {
+  border-bottom: none;
+}
+.container input {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.line {
+  width: 1px;
+  background-color: #979dac;
+  height: 40px;
+}
+.container .textField label {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+}
+.button {
+  box-shadow: none;
+  border-radius: 4px;
+  background-color: #ff4d6d;
+  font-family: "Roboto Slab", serif;
+}
+.button:hover {
+  background-color: #ff8fa3;
+  box-shadow: none;
+}
+.container .textField div::after {
+  border-bottom: none;
+  color: #979dac;
+}

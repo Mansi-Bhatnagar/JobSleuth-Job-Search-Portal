@@ -1,0 +1,22 @@
+.container {
+  background: rgb(222, 224, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 224, 235, 1) 0%,
+    rgba(245, 246, 247, 1) 25%,
+    rgba(234, 227, 232, 1) 48%,
+    rgba(240, 208, 217, 1) 65%,
+    rgba(242, 190, 202, 1) 90%,
+    rgba(242, 191, 203, 1) 100%
+  );
+  margin-top: 64px;
+  text-align: center;
+  padding-bottom: 64px;
+}
+.container h1 {
+  padding-top: 64px;
+}
+.container span {
+  color: #212529;
+  font-size: 18px;
+}
