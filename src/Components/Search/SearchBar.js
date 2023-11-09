@@ -5,17 +5,16 @@ import Button from "@mui/material/Button";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import classes from "./SearchBar.module.css";
-const SearchBar = () => {
+const SearchBar = (props) => {
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");
-
   const style = {
     "& label.Mui-focused": {
       color: "#979dac",
     },
   };
-  const searchHandler = (e) => {
-    console.log("hello");
+  const searchHandler = () => {
+    props.inputInfo(title, location);
   };
   return (
     <Box component={"div"} className={classes.container}>

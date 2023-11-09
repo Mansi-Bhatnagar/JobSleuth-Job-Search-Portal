@@ -1,0 +1,35 @@
+.container .label {
+  font-family: "Roboto Slab", serif;
+  color: #979dac;
+  font-weight: 500;
+}
+ul li {
+  font-family: "Roboto Slab", serif !important;
+}
+ul li:hover {
+  background-color: #ffe5ec !important;
+}
+.container div {
+  font-family: "Roboto Slab", serif;
+}
+ul li div span {
+  font-family: "Roboto Slab", serif !important;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.jobCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+}

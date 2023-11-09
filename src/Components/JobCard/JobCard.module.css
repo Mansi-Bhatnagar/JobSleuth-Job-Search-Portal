@@ -1,0 +1,73 @@
+.card {
+  width: 400px;
+  margin: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.01s;
+}
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardHeader img {
+  width: 80px;
+}
+.cardHeader h2 {
+  margin-bottom: 10px;
+}
+.cardSubHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardSubHeading div {
+  display: flex;
+  align-items: center;
+}
+.cardSubHeading h4,
+.cardSubHeading span {
+  color: #979dac;
+}
+.cardSubHeading h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.card .cardSubHeading span {
+  text-decoration: none;
+}
+.line {
+  width: 1px;
+  margin: 0 6px;
+  background-color: #000;
+  height: 20px;
+}
+.card span {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 15px;
+}
+.benefits {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 15px;
+}
+.benefits {
+  margin-top: 5px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+}
