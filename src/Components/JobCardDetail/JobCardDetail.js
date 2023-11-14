@@ -76,9 +76,12 @@ const JobCardDetail = (props) => {
   }, [detailData]);
   return (
     <>
-      {isLoading && <Loader />}
-      <Card className={classes.container}>
-        {!isLoading && detailData && (
+      {isLoading || !detailData ? (
+        <div className={classes.loaderContainer}>
+          <Loader />
+        </div>
+      ) : (
+        <Card className={classes.container}>
           <CardContent>
             <div className={classes.info}>
               <div className={classes.heading}>
@@ -118,20 +121,20 @@ const JobCardDetail = (props) => {
               {jobDescription && (
                 <>
                   <h3>Job Description</h3>
-                  <span>{jobDescription}</span>
+                  <p>{jobDescription}</p>
                 </>
               )}
               {jobSkills && (
                 <>
                   <h3>Skills Required</h3>
-                  <span>{jobSkills}</span>
+                  <p>{jobSkills}</p>
                 </>
               )}
               {jobBenefits && (
                 <>
                   <h3>Benefits</h3>
                   {jobBenefits.map((item) => {
-                    return <span>{item}</span>;
+                    return <p>{item}</p>;
                   })}
                 </>
               )}
@@ -139,15 +142,15 @@ const JobCardDetail = (props) => {
                 <>
                   <h3>Qualifications</h3>
                   {jobQualifications.map((item) => {
-                    return <span>{item}</span>;
+                    return <p>{item}</p>;
                   })}
                 </>
               )}
             </div>
             <ApplyModal open={open} onClose={handleClose} />
           </CardContent>
-        )}
-      </Card>
+        </Card>
+      )}
     </>
   );
 };

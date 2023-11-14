@@ -1,5 +1,5 @@
 import classes from "./Loader.module.css";
-const Loader = () => {
+const Loader = (props) => {
   return <span className={classes.loader}></span>;
 };
 

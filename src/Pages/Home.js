@@ -2,8 +2,8 @@ import { useState } from "react";
 import HeroSection from "../Components/HeroSection/HeroSection";
 import DisplaySection from "../Components/JobDisplaySection/DisplaySection";
 const Home = () => {
-  const [inpTitle, setInpTitle] = useState("");
-  const [inpLocation, setInpLocation] = useState("");
+  const [inpTitle, setInpTitle] = useState("Frontend Developer");
+  const [inpLocation, setInpLocation] = useState("Delhi, India");
   const inputInfo = (title, location) => {
     setInpTitle(title);
     setInpLocation(location);

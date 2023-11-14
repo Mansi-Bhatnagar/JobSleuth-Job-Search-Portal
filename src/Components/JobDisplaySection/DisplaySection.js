@@ -21,6 +21,7 @@ const DisplaySection = (props) => {
   const [isLoading, setIsLoading] = useState("");
   const [resultData, setResultData] = useState("");
   const [currId, setCurrId] = useState("");
+  const [jobs, setJobs] = useState([]);
   const style = {
     boxShadow: "none",
     ".MuiOutlinedInput-notchedOutline": { border: 0 },
@@ -108,26 +109,33 @@ const DisplaySection = (props) => {
     employmentType,
     jobRequirement,
   ]);
-  let jobs = [];
-  if (resultData.data) {
-    jobs = resultData?.data?.map((job) => {
-      return (
-        <JobCard
-          key={job.job_id || ""}
-          id={job.job_id || ""}
-          title={job.job_title || ""}
-          logo={job.employer_logo || ""}
-          name={job.employer_name || ""}
-          city={job.job_city || ""}
-          state={job.job_state || ""}
-          country={job.job_country || ""}
-          description={job.job_description || ""}
-          benefits={job.job_highlights?.Benefits || ""}
-          passId={passId}
-        />
+  useEffect(() => {
+    if (resultData.data) {
+      setJobs(
+        resultData?.data?.map((job, index) => {
+          if (index == 0) {
+            setCurrId(job.job_id || "");
+          }
+          return (
+            <JobCard
+              key={job.job_id || ""}
+              id={job.job_id || ""}
+              title={job.job_title || ""}
+              logo={job.employer_logo || ""}
+              name={job.employer_name || ""}
+              city={job.job_city || ""}
+              state={job.job_state || ""}
+              country={job.job_country || ""}
+              description={job.job_description || ""}
+              benefits={job.job_highlights?.Benefits || ""}
+              passId={passId}
+            />
+          );
+        })
       );
-    });
-  }
+    }
+  }, [resultData]);
+
   return (
     <>
       <div className={classes.wrapper}>

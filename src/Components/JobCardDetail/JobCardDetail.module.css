@@ -1,3 +1,10 @@
+.loaderContainer {
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
 .container {
   width: 600px;
   margin-left: 20px;
@@ -81,6 +88,7 @@
   font-size: 20px;
   font-weight: 500;
 }
-.detail span {
+.detail p {
   font-size: 16px;
+  word-wrap: break-word;
 }
