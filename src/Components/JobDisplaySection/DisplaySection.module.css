@@ -33,3 +33,17 @@ ul li div span {
   flex-direction: column;
   margin-right: 20px;
 }
+.jobDetailContainer {
+  position: sticky;
+  top: 70px;
+}
+@media (max-width: 768px) {
+  .jobDetailContainer {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .jobCardContainer {
+    margin-right: 5px;
+  }
+}

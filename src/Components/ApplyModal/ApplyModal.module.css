@@ -101,6 +101,9 @@
 .coverLetter {
   border: 1px solid #949dac;
   border-radius: 6px;
+  /* width: 440px; */
+  width: 100%;
+  padding: 0;
   resize: none;
   overflow-y: scroll;
   margin-bottom: 10px;
@@ -126,10 +129,7 @@
   float: right;
 }
 .fileName {
-  width: calc(28rem - 80px);
-  text-wrap: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  width: auto;
   background-color: #e9ecef;
   padding: 5px;
   border-radius: 2px;
@@ -153,4 +153,38 @@
 }
 .successContainer h2 {
   font-weight: 500;
+}
+@media (max-width: 600px) {
+  .container,
+  .successContainer {
+    width: 400px;
+  }
+}
+@media (max-width: 520px) {
+  .container,
+  .successContainer {
+    padding: 20px;
+    width: 350px;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
+  .container h3,
+  .fileLabel p {
+    font-size: 15px;
+  }
+  .uploadButton,
+  .submitButton {
+    font-size: 12px;
+  }
+  .successContainer h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .container,
+  .successContainer {
+    padding: 15px;
+    width: 300px;
+  }
 }

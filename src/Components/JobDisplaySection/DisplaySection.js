@@ -90,7 +90,6 @@ const DisplaySection = (props) => {
       );
       const data = await response.json();
       setResultData(data);
-      console.log(data);
     } catch (err) {
       console.error(err);
     }
@@ -270,7 +269,9 @@ const DisplaySection = (props) => {
         ) : (
           <>
             <div className={classes.jobCardContainer}>{jobs}</div>
-            <JobCardDetail id={currId} />
+            <div className={classes.jobDetailContainer}>
+              <JobCardDetail id={currId} />
+            </div>
           </>
         )}
       </div>

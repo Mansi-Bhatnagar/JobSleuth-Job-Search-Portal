@@ -71,3 +71,33 @@
   cursor: pointer;
   transform: scale(1.005);
 }
+@media (max-width: 1000px) and (min-width: 850px) {
+  .card {
+    width: 350px;
+  }
+}
+@media (max-width: 850px) and (min-width: 769px) {
+  .card {
+    width: 300px;
+  }
+  .cardHeader h2 {
+    font-size: 18px;
+  }
+  .cardHeader img {
+    width: 40px;
+  }
+  .cardSubHeading h4 {
+    font-size: 16px;
+  }
+  .card .cardSubHeading span {
+    font-size: 16px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 430px) {
+  .card {
+    width: 350px;
+  }
+}

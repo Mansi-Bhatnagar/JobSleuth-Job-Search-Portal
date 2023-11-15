@@ -9,8 +9,6 @@
   width: 600px;
   margin-left: 20px;
   margin-bottom: 20px;
-  position: sticky;
-  top: 70px;
   box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.1);
@@ -70,20 +68,20 @@
 .detail {
   height: 700px;
   overflow-y: scroll;
-  /* background-color: #0000008d;
   &::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
-  } */
+  }
 }
-/* .detail:hover {
+.detail:hover {
   &::-webkit-scrollbar {
     width: 8px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #ffffff7c;
+    background-color: #adb5bd;
+    border-radius: 20px;
   }
-} */
+}
 .detail h3 {
   font-size: 20px;
   font-weight: 500;
@@ -91,4 +89,43 @@
 .detail p {
   font-size: 16px;
   word-wrap: break-word;
+}
+@media (max-width: 1150px) {
+  .container {
+    width: 500px;
+  }
+  .button {
+    padding: 6px 8px;
+    width: 100px;
+  }
+}
+@media (max-width: 950px) {
+  .container {
+    width: 400px;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    margin-top: 94px;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+  .detail {
+    height: max-content;
+  }
+  .loaderContainer {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
 }

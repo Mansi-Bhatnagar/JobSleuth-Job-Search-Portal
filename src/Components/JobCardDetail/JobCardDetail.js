@@ -32,7 +32,7 @@ const JobCardDetail = (props) => {
     setOpen(false);
   };
   useEffect(() => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth >= 769) {
       setCurrId(props.id);
     } else {
       setCurrId(id);
@@ -48,7 +48,6 @@ const JobCardDetail = (props) => {
       );
       const data = await response.json();
       setDetailData(data);
-      console.log(data);
     } catch (err) {
       console.error(err);
     }
@@ -66,10 +65,10 @@ const JobCardDetail = (props) => {
       setMinSalary(detailData?.data[0]?.job_min_salary || "");
       setMaxSalary(detailData?.data[0]?.job_max_salary || "");
       setJobDescription(detailData?.data[0]?.job_description || "");
-      setJobBenefits(detailData?.data[0]?.job_highlights?.Benefits || ""); //array
+      setJobBenefits(detailData?.data[0]?.job_highlights?.Benefits || "");
       setJobQualifications(
         detailData?.data[0]?.job_highlights?.Qualifications || ""
-      ); //array
+      );
       setJobSkills(detailData?.data[0]?.job_required_skills || "");
       setJobEmploymentType(detailData?.data[0]?.job_employment_type || "");
     }

@@ -50,3 +50,37 @@
   border-bottom: none;
   color: #979dac;
 }
+@media (max-width: 650px) {
+  .container {
+    width: 500px;
+  }
+  .button {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 400px;
+  }
+  .container .textField label {
+    font-size: 13px;
+  }
+  .icons {
+    margin: 0;
+  }
+  .button {
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    width: 350px;
+  }
+  .container div div {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .button {
+    font-size: 12px;
+  }
+}

@@ -120,7 +120,6 @@ const ApplyModal = (props) => {
         </h6>
         <textarea
           rows={8}
-          cols={58}
           className={classes.coverLetter}
           onChange={handleCoverLetter}
           value={coverLetter}
