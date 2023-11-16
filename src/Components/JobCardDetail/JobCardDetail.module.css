@@ -60,6 +60,7 @@
   font-family: "Roboto Slab", serif;
   text-transform: none;
   margin-top: 15px;
+  margin-right: 10px;
 }
 .tags:hover {
   box-shadow: none;

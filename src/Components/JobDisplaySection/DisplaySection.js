@@ -109,7 +109,7 @@ const DisplaySection = (props) => {
     jobRequirement,
   ]);
   useEffect(() => {
-    if (resultData.data) {
+    if (!isLoading && resultData.data) {
       setJobs(
         resultData?.data?.map((job, index) => {
           if (index == 0) {
@@ -133,7 +133,7 @@ const DisplaySection = (props) => {
         })
       );
     }
-  }, [resultData]);
+  }, [resultData, isLoading]);
 
   return (
     <>
@@ -266,13 +266,15 @@ const DisplaySection = (props) => {
       >
         {isLoading ? (
           <Loader />
-        ) : (
+        ) : jobs && jobs.length ? (
           <>
             <div className={classes.jobCardContainer}>{jobs}</div>
             <div className={classes.jobDetailContainer}>
               <JobCardDetail id={currId} />
             </div>
           </>
+        ) : (
+          <p>No results found. Try searching some other keywords.</p>
         )}
       </div>
     </>

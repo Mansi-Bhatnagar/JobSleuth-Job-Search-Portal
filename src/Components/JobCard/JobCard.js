@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useContext } from "react";
+import SaveContext from "../../Context";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
@@ -11,7 +12,7 @@ const JobCard = (props) => {
   const { id, title, logo, name, city, state, country, description, benefits } =
     props;
   const navigate = useNavigate();
-  const [isSaved, setIsSaved] = useState(false);
+  const { currIds, setCurrIds } = useContext(SaveContext);
   const detailHandler = () => {
     if (window.innerWidth < "768") {
       navigate(`/detail/${id}`);
@@ -19,8 +20,9 @@ const JobCard = (props) => {
       props.passId(id);
     }
   };
-  const bookmarkHandler = () => {
-    setIsSaved((prev) => !prev);
+  const bookmarkHandler = (e) => {
+    e.stopPropagation();
+    setCurrIds(id);
   };
   return (
     <Card onClick={detailHandler} className={classes.card}>
@@ -40,7 +42,7 @@ const JobCard = (props) => {
           </div>
           <Tooltip title="Save" placement="right" arrow>
             <div onClick={bookmarkHandler}>
-              {isSaved ? (
+              {currIds?.includes(id) ? (
                 <BookmarkIcon
                   sx={{
                     filter:
