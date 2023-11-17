@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# JobSleuth-Job-Search-Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Live Site URL](#live-site-url)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Built with](#built-with)
+- [API used](#api-used)
 
-In the project directory, you can run:
+## Live Site URL
 
-### `npm start`
+View live on- [https://job-sleuth.netlify.app/](https://job-sleuth.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Welcome to JobSleuth (Job-Search-Portal)! Our platform aims to simplify the job search process for both job seekers and employers. With an intuitive interface and robust features, JobSleuth provides a comprehensive solution for connecting talented individuals with exciting career opportunities.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- #### User-Friendly Interface:
+  Easy-to-use interface for effortless browsing of jobs and profiles.
+- #### Customizable Filters:
+  Refine job searches based on date posted, experience, job type, radius and more.
+- #### Keyword Search:
+  Users can search for particular jobs by entering specific job titles and locations.
+- #### Seamless Application Process:
+  Job seekers can apply directly through the platform with uploaded resumes and cover letters.
+- #### Saving Jobs:
+  Users can save the jobs they are interested in, for applying later and can easily access them in saved page.
+- #### Responsive Design:
+  Access the portal on various devices, ensuring a seamless experience on PCs, mobile phones and tablets.
 
-### `npm run build`
+## Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Semantic HTML5 markup
+- CSS custom properties
+- [React](https://reactjs.org/) - JS library
+- [MUI](https://mui.com/material-ui/getting-started/) - React Component Library
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- JSearch by OpenWeb Ninja(Rapid API): [https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/)
