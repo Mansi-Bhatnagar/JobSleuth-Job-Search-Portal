@@ -18,17 +18,17 @@ Welcome to JobSleuth (Job-Search-Portal)! Our platform aims to simplify the job 
 
 ## Features
 
-- #### User-Friendly Interface:
+- ### User-Friendly Interface:
   Easy-to-use interface for effortless browsing of jobs and profiles.
-- #### Customizable Filters:
+- ### Customizable Filters:
   Refine job searches based on date posted, experience, job type, radius and more.
-- #### Keyword Search:
+- ### Keyword Search:
   Users can search for particular jobs by entering specific job titles and locations.
-- #### Seamless Application Process:
+- ### Seamless Application Process:
   Job seekers can apply directly through the platform with uploaded resumes and cover letters.
-- #### Saving Jobs:
+- ### Saving Jobs:
   Users can save the jobs they are interested in, for applying later and can easily access them in saved page.
-- #### Responsive Design:
+- ### Responsive Design:
   Access the portal on various devices, ensuring a seamless experience on PCs, mobile phones and tablets.
 
 ## Built with
